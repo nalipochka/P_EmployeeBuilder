@@ -35,7 +35,7 @@ namespace P_EmployeeBuilder
                 sb.AppendLine($"e-Mail: {EMail}");
             if (Education != null)
                 sb.AppendLine($"Education: {Education}");
-            if (Competencies != null)
+            if (Competencies.Count > 0)
             {
                 sb.AppendLine("Cometencies:");
                 foreach (var item in Competencies)
@@ -43,7 +43,7 @@ namespace P_EmployeeBuilder
                     sb.AppendLine($"\r\t {item}");
                 }
             }
-            if (Positions != null)
+            if (Positions.Count > 0)
             {
                 sb.AppendLine("Positions:");
                 foreach (var item in Positions)
